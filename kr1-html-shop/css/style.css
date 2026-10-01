@@ -1,7 +1,38 @@
+:root {
+    --primary-color: #888a8f;
+    --text-color: #333;
+    --bg-color: #ffffff;
+}
+
+body {
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+.contact-form__submit {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+}
+
 .product-card__img {
     max-width: 150px;
 }
 
 .product-detail-card__img {
     max-width: 200px;
+}
+
+.product-card__btn {
+    background-color: var(--primary-color);
+}
+
+.product-detail-card__btn {
+    background-color: var(--primary-color);
+    
+}
+
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
 }
