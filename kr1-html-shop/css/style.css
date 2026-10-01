@@ -36,3 +36,29 @@ body {
     flex-wrap: wrap;
     gap: 16px;
 }
+
+
+.product-detail-card {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 10px;
+}
+
+nav a:hover {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    gap: 16px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+nav a:focus-visible {
+    outline: 2px solid var(--primary-color);
+}
