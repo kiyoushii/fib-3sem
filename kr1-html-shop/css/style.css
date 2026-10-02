@@ -44,22 +44,22 @@ body {
     gap: 10px;
 }
 
-nav a:hover {
+.nav__link:hover {
     color: var(--primary-color);
     text-decoration: none;
 }
 
-nav {
+.nav {
     display: flex;
     gap: 16px;
 }
 
-nav a {
+.nav__link {
     text-decoration: none;
     color: var(--text-color);
 }
 
-nav a:focus-visible {
+.nav__link:focus-visible {
     outline: 2px solid var(--primary-color);
 }
 
