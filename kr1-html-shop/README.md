@@ -51,4 +51,4 @@ kr1-html-shop/
 
 ## Демо
 
-Сайт: *(ссылка появится после публикации на GitHub Pages)*
+Сайт: https://kiyoushii.github.io/fib-3sem/kr1-html-shop/index.html
