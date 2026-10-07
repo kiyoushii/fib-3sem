@@ -10,21 +10,100 @@
 
 <body>
     <header class="header">
-        <!-- -->
-        <nav class="nav">
+        <div class="header__inner">
+            <a class="header__logo" href="index.html">KIYOUSHII</a>
+            <nav class="nav">
             <a class="nav__link" href="index.html">Главная</a>
             <a class="nav__link" href="catalog.html">Каталог</a>
             <a class="nav__link" href="about.html">О нас</a>
             <a class="nav__link" href="contacts.html">Контакты</a>
             <a class="nav__link" href="#advantages">Преимущества</a>
         </nav>
+        </div>
     </header>
 
     <main>
         <section class="hero">
-            <h1 class="hero__title">Добро пожаловать в наш магазин.</h1>
-            <h2 class="hero__subtitle">Описание</h2>
+            <h1 class="hero__title">Винтажная и редкая одежда</h1>
+            <h2 class="hero__subtitle">Отбираем вещи, которые сложно найти в обычных магазинах — от рабочих курток
+                Carhartt до ретро-кроссовок New Balance.</h2>
             <a class="hero__link" href="catalog.html">Перейти в каталог</a>
+        </section>
+
+        <section class="categories">
+            <h2 class="categories__title">Категории</h2>
+            <div class="categories__grid">
+                <a class="category-card" href="catalog.html#verhnyaya-odezhda">
+                    <img class="category-card__img" src="img/01_1_verhnyaya-odezhda_carhartt-santa-fe-jacket_1.jpg"
+                        alt="Верхняя одежда">
+                    <span class="category-card__title">Верхняя одежда</span>
+                </a>
+                <a class="category-card" href="catalog.html#bryuki">
+                    <img class="category-card__img" src="img/04_2_bryuki_carhartt-landon-trousers_1.jpg"
+                        alt="Брюки">
+                    <span class="category-card__title">Брюки</span>
+                </a>
+                <a class="category-card" href="catalog.html#obuv">
+                    <img class="category-card__img" src="img/07_3_obuv_converse-chuck-70-hi_1.jpg" alt="Обувь">
+                    <span class="category-card__title">Обувь</span>
+                </a>
+                <a class="category-card" href="catalog.html#aksessuary">
+                    <img class="category-card__img" src="img/10_4_aksessuary_new-era-yankees-cap_1.jpg"
+                        alt="Аксессуары">
+                    <span class="category-card__title">Аксессуары</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="popular">
+            <h2 class="popular__title">Популярные товары</h2>
+            <div class="catalog">
+                <article class="product-card">
+                    <a class="product-card__link" href="product-carhartt-santa-fe-jacket.html">
+                        <div class="product-card__media">
+                            <img class="product-card__img" src="img/01_1_verhnyaya-odezhda_carhartt-santa-fe-jacket_1.jpg"
+                                alt="Куртка Carhartt Santa Fe">
+                            <span class="product-card__badge">Новинка!</span>
+                        </div>
+                        <h3 class="product-card__title">Куртка Carhartt Santa Fe</h3>
+                    </a>
+                    <p class="product-card__price">8900₽</p>
+                    <button class="product-card__btn">В корзину</button>
+                </article>
+                <article class="product-card">
+                    <a class="product-card__link" href="product-new-balance-530.html">
+                        <div class="product-card__media">
+                            <img class="product-card__img" src="img/08_3_obuv_new-balance-530_1.jpg"
+                                alt="Кроссовки New Balance 530">
+                        </div>
+                        <h3 class="product-card__title">Кроссовки New Balance 530</h3>
+                    </a>
+                    <p class="product-card__price">7900₽</p>
+                    <button class="product-card__btn">В корзину</button>
+                </article>
+                <article class="product-card">
+                    <a class="product-card__link" href="product-tommy-jeans-otis-cargo.html">
+                        <div class="product-card__media">
+                            <img class="product-card__img" src="img/06_2_bryuki_tommy-jeans-otis-cargo_1.jpg"
+                                alt="Карго Tommy Jeans Otis">
+                        </div>
+                        <h3 class="product-card__title">Карго Tommy Jeans Otis</h3>
+                    </a>
+                    <p class="product-card__price">5900₽</p>
+                    <button class="product-card__btn">В корзину</button>
+                </article>
+                <article class="product-card">
+                    <a class="product-card__link" href="product-north-face-base-camp-duffel.html">
+                        <div class="product-card__media">
+                            <img class="product-card__img" src="img/12_4_aksessuary_north-face-base-camp-duffel_1.jpg"
+                                alt="Сумка The North Face Base Camp">
+                        </div>
+                        <h3 class="product-card__title">Сумка The North Face Base Camp</h3>
+                    </a>
+                    <p class="product-card__price">8900₽</p>
+                    <button class="product-card__btn">В корзину</button>
+                </article>
+            </div>
         </section>
 
         <section class="advantages-block" id="advantages">
@@ -34,6 +113,13 @@
                 <li class="advantages-block__item">Быстрая доставка</li>
                 <li class="advantages-block__item">Качественная поддержка на каждом этапе покупки</li>
             </ul>
+        </section>
+
+        <section class="about-teaser">
+            <h2 class="about-teaser__title">О магазине</h2>
+            <p class="about-teaser__text">KIYOUSHII — небольшой магазин винтажной и редкой одежды. Мы ищем вещи
+                с историей и характером, которые не найти на массовых маркетплейсах.</p>
+            <a class="about-teaser__link" href="about.html">Узнать больше</a>
         </section>
     </main>
 
