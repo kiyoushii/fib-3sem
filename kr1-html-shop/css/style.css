@@ -140,6 +140,17 @@ main {
 
 /* ===== Catalog / Product card ===== */
 
+.catalog-group {
+    margin-bottom: 40px;
+}
+
+.catalog-group__title {
+    color: var(--color-bean);
+    border-bottom: 2px solid var(--color-vanilla);
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
 .catalog {
     display: flex;
     flex-wrap: wrap;
@@ -331,6 +342,23 @@ a .product-card__title {
     background: var(--color-dark-green);
     color: var(--color-vanilla);
     font-family: var(--font-heading);
+}
+
+.specs-list {
+    list-style: none;
+    padding: 0;
+    max-width: 480px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(49, 15, 16, 0.06);
+}
+
+.specs-list li {
+    padding: 10px 16px;
+    border-bottom: 1px solid var(--color-vanilla);
+}
+
+.specs-list li:last-child {
+    border-bottom: none;
 }
 
 /* ===== About / Contacts ===== */
