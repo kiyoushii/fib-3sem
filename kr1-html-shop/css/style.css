@@ -225,6 +225,7 @@ a .product-card__title {
 .product-card__price {
     font-weight: 700;
     color: var(--color-dark-green);
+    margin-top: auto;
 }
 
 .product-card__btn {
