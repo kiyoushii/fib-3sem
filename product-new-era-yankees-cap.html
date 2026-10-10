@@ -7,6 +7,7 @@
     <title>SHOP - Кепка New Era Yankees</title>
     <meta name="description" content="Кепка New Era Yankees — купить в KIYOUSHII, магазине винтажной и редкой одежды.">
     <link rel="stylesheet" href="css/style.css?v=2">
+    <script src="js/main.js" defer></script>
 </head>
 
 <body>
@@ -44,7 +45,7 @@
                 <h1 class="product-detail-card__title">Кепка New Era Yankees</h1>
                 <p class="product-detail-card__description">Кепка New Era с логотипом New York Yankees, классическая форма 59FIFTY.</p>
                 <p class="product-detail-card__price">Цена: 3200₽</p>
-                <button class="product-detail-card__btn">В корзину</button>
+                <button class="product-detail-card__btn" type="button" data-product="Кепка New Era Yankees">Заказать</button>
             </div>
         </article>
 
@@ -61,6 +62,40 @@
     <footer class="footer">
         <p class="footer__text">&copy;kiyoushii Shop. Все права защищены.</p>
     </footer>
+    <dialog class="order-dialog" id="order-dialog">
+        <form class="order-form" id="order-form">
+            <button type="button" class="order-dialog__close" id="close-order-dialog" aria-label="Закрыть">&times;</button>
+            <h2 class="order-form__title">Оформление заявки</h2>
+            <p class="order-form__product">Товар: <span id="order-product-name"></span></p>
+            <input type="hidden" name="product" id="order-product">
+
+            <label for="order-name">Имя</label>
+            <input id="order-name" name="name" type="text" required minlength="2" placeholder="Как к вам обращаться">
+
+            <label for="order-email">E-mail</label>
+            <input id="order-email" name="email" type="email" required placeholder="example@mail.ru">
+
+            <label for="order-phone">Телефон</label>
+            <input id="order-phone" name="phone" type="tel" inputmode="tel" required pattern="^[\d\s\+\-\(\)]{10,}$" placeholder="+7 900 000-00-00">
+
+            <label for="order-date">Удобная дата звонка</label>
+            <input id="order-date" name="date" type="date">
+
+            <label for="order-comment">Комментарий</label>
+            <textarea id="order-comment" name="comment" placeholder="Размер, цвет, пожелания"></textarea>
+
+            <label class="order-form__consent">
+                <input type="checkbox" name="consent" required>
+                Согласен(на) на обработку персональных данных
+            </label>
+
+            <p class="order-form__success" id="order-success" hidden>Форма успешно отправлена!</p>
+
+            <button type="submit" class="order-form__submit">Отправить заявку</button>
+        </form>
+    </dialog>
+
+
 
 </body>
 </html>

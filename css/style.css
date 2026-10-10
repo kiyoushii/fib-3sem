@@ -835,6 +835,122 @@ a .product-card__title {
     background-color: var(--color-bean);
 }
 
+/* ===== Order dialog ===== */
+
+.order-dialog {
+    border: none;
+    border-radius: 12px;
+    padding: 28px;
+    max-width: 420px;
+    width: 90%;
+    box-shadow: 0 10px 30px rgba(49, 15, 16, 0.25);
+}
+
+.order-dialog::backdrop {
+    background: rgba(49, 15, 16, 0.6);
+}
+
+.order-form {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    position: relative;
+}
+
+.order-dialog__close {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: none;
+    background: var(--color-bean);
+    color: var(--color-vanilla);
+    font-size: 1.1rem;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.order-dialog__close:hover {
+    background: var(--color-blood-red);
+}
+
+.order-form__title {
+    color: var(--color-bean);
+    margin-bottom: 4px;
+}
+
+.order-form__product {
+    color: var(--color-dark-green);
+    margin-bottom: 12px;
+}
+
+.order-form label {
+    font-weight: 600;
+    color: var(--color-bean);
+    margin-top: 8px;
+}
+
+.order-form input,
+.order-form textarea {
+    padding: 10px 12px;
+    border: 1px solid var(--color-vanilla);
+    border-radius: 6px;
+    font-family: var(--font-body);
+    font-size: 1rem;
+}
+
+.order-form input:focus-visible,
+.order-form textarea:focus-visible {
+    outline: 2px solid var(--color-blood-red);
+    outline-offset: 1px;
+}
+
+.order-form textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.order-form__consent {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: var(--color-dark-green);
+}
+
+.order-form__success {
+    color: var(--color-dark-green);
+    font-weight: 600;
+    background: var(--color-vanilla-light);
+    border-radius: 6px;
+    padding: 10px;
+    text-align: center;
+}
+
+.order-form__submit {
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: background 0.2s ease;
+}
+
+.order-form__submit:hover {
+    background: var(--color-bean);
+}
+
+.order-form__submit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
 /* ===== Footer ===== */
 
 .footer {
