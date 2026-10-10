@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SHOP - Каталог</title>
+    <meta name="description" content="Каталог винтажной одежды, обуви и аксессуаров KIYOUSHII.">
     <link rel="stylesheet" href="css/style.css?v=2">
 </head>
 
@@ -17,13 +18,43 @@
                 <a class="nav__link" href="catalog.html">Каталог</a>
                 <a class="nav__link" href="about.html">О нас</a>
                 <a class="nav__link" href="contacts.html">Контакты</a>
+                <a class="nav__link" href="index.html#advantages">Преимущества</a>
+                <a class="nav__link" href="index.html#popular">Популярные товары</a>
             </nav>
         </div>
     </header>
 
     <main>
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+            <a href="index.html">Главная</a>
+            <span>Каталог</span>
+        </nav>
+
         <h1>Каталог товаров</h1>
 
+        <div class="catalog-layout">
+            <aside class="catalog-filters">
+                <h2 class="catalog-filters__title">Фильтры</h2>
+                <div class="catalog-filters__group">
+                    <h3 class="catalog-filters__label">Пол</h3>
+                    <label><input type="checkbox" name="gender" value="male">Мужское</label>
+                    <label><input type="checkbox" name="gender" value="female">Женское</label>
+                </div>
+                <div class="catalog-filters__group">
+                    <h3 class="catalog-filters__label">Цена</h3>
+                    <label>От <input type="number" name="price-min" placeholder="0"></label>
+                    <label>До <input type="number" name="price-max" placeholder="30000"></label>
+                </div>
+                <div class="catalog-filters__group">
+                    <h3 class="catalog-filters__label">Размер</h3>
+                    <label><input type="checkbox" name="size" value="s">S</label>
+                    <label><input type="checkbox" name="size" value="m">M</label>
+                    <label><input type="checkbox" name="size" value="l">L</label>
+                    <label><input type="checkbox" name="size" value="xl">XL</label>
+                </div>
+            </aside>
+
+            <div class="catalog-products">
         <section class="catalog-group" id="verhnyaya-odezhda">
             <h2 class="catalog-group__title">Верхняя одежда</h2>
             <div class="catalog">
@@ -168,6 +199,8 @@
             </article>
             </div>
         </section>
+            </div>
+        </div>
     </main>
 
     <footer class="footer">

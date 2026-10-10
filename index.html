@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>kiyoushii-shop</title>
+    <meta name="description" content="Интернет-магазин винтажной и редкой одежды KIYOUSHII — куртки, брюки, обувь и аксессуары с историей.">
     <link rel="stylesheet" href="css/style.css?v=2">
 </head>
 
@@ -13,12 +14,13 @@
         <div class="header__inner">
             <a class="header__logo" href="index.html">KIYOUSHII</a>
             <nav class="nav">
-            <a class="nav__link" href="index.html">Главная</a>
-            <a class="nav__link" href="catalog.html">Каталог</a>
-            <a class="nav__link" href="about.html">О нас</a>
-            <a class="nav__link" href="contacts.html">Контакты</a>
-            <a class="nav__link" href="#advantages">Преимущества</a>
-        </nav>
+                <a class="nav__link" href="index.html">Главная</a>
+                <a class="nav__link" href="catalog.html">Каталог</a>
+                <a class="nav__link" href="about.html">О нас</a>
+                <a class="nav__link" href="contacts.html">Контакты</a>
+                <a class="nav__link" href="index.html#advantages">Преимущества</a>
+                <a class="nav__link" href="index.html#popular">Популярные товары</a>
+            </nav>
         </div>
     </header>
 
@@ -55,54 +57,65 @@
             </div>
         </section>
 
-        <section class="popular">
+        <section class="popular" id="popular">
             <h2 class="popular__title">Популярные товары</h2>
-            <div class="catalog">
-                <article class="product-card">
-                    <a class="product-card__link" href="product-carhartt-santa-fe-jacket.html">
-                        <div class="product-card__media">
-                            <img class="product-card__img" src="images/01_1_verhnyaya-odezhda_carhartt-santa-fe-jacket_1.jpg"
-                                alt="Куртка Carhartt Santa Fe">
-                            <span class="product-card__badge">Новинка!</span>
-                        </div>
-                        <h3 class="product-card__title">Куртка Carhartt Santa Fe</h3>
-                    </a>
-                    <p class="product-card__price">8900₽</p>
-                    <button class="product-card__btn">В корзину</button>
-                </article>
-                <article class="product-card">
-                    <a class="product-card__link" href="product-new-balance-530.html">
-                        <div class="product-card__media">
-                            <img class="product-card__img" src="images/08_3_obuv_new-balance-530_1.jpg"
-                                alt="Кроссовки New Balance 530">
-                        </div>
-                        <h3 class="product-card__title">Кроссовки New Balance 530</h3>
-                    </a>
-                    <p class="product-card__price">7900₽</p>
-                    <button class="product-card__btn">В корзину</button>
-                </article>
-                <article class="product-card">
-                    <a class="product-card__link" href="product-tommy-jeans-otis-cargo.html">
-                        <div class="product-card__media">
-                            <img class="product-card__img" src="images/06_2_bryuki_tommy-jeans-otis-cargo_1.jpg"
-                                alt="Карго Tommy Jeans Otis">
-                        </div>
-                        <h3 class="product-card__title">Карго Tommy Jeans Otis</h3>
-                    </a>
-                    <p class="product-card__price">5900₽</p>
-                    <button class="product-card__btn">В корзину</button>
-                </article>
-                <article class="product-card">
-                    <a class="product-card__link" href="product-north-face-base-camp-duffel.html">
-                        <div class="product-card__media">
-                            <img class="product-card__img" src="images/12_4_aksessuary_north-face-base-camp-duffel_1.jpg"
-                                alt="Сумка The North Face Base Camp">
-                        </div>
-                        <h3 class="product-card__title">Сумка The North Face Base Camp</h3>
-                    </a>
-                    <p class="product-card__price">8900₽</p>
-                    <button class="product-card__btn">В корзину</button>
-                </article>
+            <div class="popular__layout">
+                <div class="catalog">
+                    <article class="product-card">
+                        <a class="product-card__link" href="product-carhartt-santa-fe-jacket.html">
+                            <div class="product-card__media">
+                                <img class="product-card__img" src="images/01_1_verhnyaya-odezhda_carhartt-santa-fe-jacket_1.jpg"
+                                    alt="Куртка Carhartt Santa Fe">
+                                <span class="product-card__badge">Новинка!</span>
+                            </div>
+                            <h3 class="product-card__title">Куртка Carhartt Santa Fe</h3>
+                        </a>
+                        <p class="product-card__price">8900₽</p>
+                        <button class="product-card__btn" type="button" data-product="Куртка Carhartt Santa Fe">Заказать</button>
+                    </article>
+                    <article class="product-card">
+                        <a class="product-card__link" href="product-new-balance-530.html">
+                            <div class="product-card__media">
+                                <img class="product-card__img" src="images/08_3_obuv_new-balance-530_1.jpg"
+                                    alt="Кроссовки New Balance 530">
+                            </div>
+                            <h3 class="product-card__title">Кроссовки New Balance 530</h3>
+                        </a>
+                        <p class="product-card__price">7900₽</p>
+                        <button class="product-card__btn" type="button" data-product="Кроссовки New Balance 530">Заказать</button>
+                    </article>
+                    <article class="product-card">
+                        <a class="product-card__link" href="product-tommy-jeans-otis-cargo.html">
+                            <div class="product-card__media">
+                                <img class="product-card__img" src="images/06_2_bryuki_tommy-jeans-otis-cargo_1.jpg"
+                                    alt="Карго Tommy Jeans Otis">
+                            </div>
+                            <h3 class="product-card__title">Карго Tommy Jeans Otis</h3>
+                        </a>
+                        <p class="product-card__price">5900₽</p>
+                        <button class="product-card__btn" type="button" data-product="Карго Tommy Jeans Otis">Заказать</button>
+                    </article>
+                    <article class="product-card">
+                        <a class="product-card__link" href="product-north-face-base-camp-duffel.html">
+                            <div class="product-card__media">
+                                <img class="product-card__img" src="images/12_4_aksessuary_north-face-base-camp-duffel_1.jpg"
+                                    alt="Сумка The North Face Base Camp">
+                            </div>
+                            <h3 class="product-card__title">Сумка The North Face Base Camp</h3>
+                        </a>
+                        <p class="product-card__price">8900₽</p>
+                        <button class="product-card__btn" type="button" data-product="Сумка The North Face Base Camp">Заказать</button>
+                    </article>
+                </div>
+                <aside class="popular__aside">
+                    <h3 class="popular__aside-title">Коротко о покупке</h3>
+                    <ul class="popular__aside-list">
+                        <li>Доставка по России — 3–7 дней</li>
+                        <li>Оплата картой онлайн или при получении</li>
+                        <li>Каждая вещь проверяется на подлинность</li>
+                        <li>Обмен и возврат в течение 14 дней</li>
+                    </ul>
+                </aside>
             </div>
         </section>
 
